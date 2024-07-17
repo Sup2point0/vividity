@@ -1,0 +1,12 @@
+{
+  "title": "Vividity Colour Palette Schema",
+  "description": "A vividity colour palette!",
+  "version": "1.0",
+  "additionalProperties": false,
+  "properties":
+  {
+    "prot": {
+      "title": "Primary Colour"
+    }
+  }
+}
