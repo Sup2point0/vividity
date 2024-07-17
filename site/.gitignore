@@ -1,0 +1,10 @@
+# output
+~content.md
+build/
+
+# internal
+**.env**
+node_modules/
+.svelte-kit/
+
+vite.config.*.timestamp-*
