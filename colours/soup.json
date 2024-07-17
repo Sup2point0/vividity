@@ -1,0 +1,35 @@
+{
+  "$schema": "../technicals/schema.json",
+
+  "name": "soup",
+  "desc": "Colours for the Assort site",
+
+  "prot": "",
+  "deut": "",
+
+  "focus": "",
+
+  "text": "",
+    "text-prot": "",
+    "text-deut": "",
+    "text-trit": "",
+    "text-bold": "",
+    "text-select": "",
+
+  "back": "",
+    "back-prot": "",
+    "back-deut": "",
+    "back-trit": "",
+
+  "line": "",
+    "line-prot": "",
+    "line-deut": "",
+
+  "link": "",
+    "link-hover": "",
+    "link-click": "",
+
+  "card": "",
+    "card-hover": "",
+    "card-click": ""
+}
