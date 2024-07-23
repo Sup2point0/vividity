@@ -37,27 +37,28 @@
     "focus": {"type": "string", "fallback": ""},
   
     "text": {"type": "string", "fallback": ""},
-    "text-prot": {"type": "string", "fallback": ""},
-    "text-deut": {"type": "string", "fallback": ""},
-    "text-trit": {"type": "string", "fallback": ""},
-    "text-bold": {"type": "string", "fallback": ""},
-    "text-select": {"type": "string", "fallback": ""},
+      "text-prot": {"type": "string", "fallback": ""},
+      "text-deut": {"type": "string", "fallback": ""},
+      "text-trit": {"type": "string", "fallback": ""},
+      "text-bold": {"type": "string", "fallback": ""},
+      "text-code": {"type": "string", "fallback": ""},
   
     "back": {"type": "string", "fallback": ""},
-    "back-prot": {"type": "string", "fallback": ""},
-    "back-deut": {"type": "string", "fallback": ""},
-    "back-trit": {"type": "string", "fallback": ""},
+      "back-prot": {"type": "string", "fallback": ""},
+      "back-deut": {"type": "string", "fallback": ""},
+      "back-trit": {"type": "string", "fallback": ""},
   
     "line": {"type": "string", "fallback": ""},
-    "line-prot": {"type": "string", "fallback": ""},
-    "line-deut": {"type": "string", "fallback": ""},
+      "line-prot": {"type": "string", "fallback": ""},
+      "line-deut": {"type": "string", "fallback": ""},
   
     "link": {"type": "string", "fallback": ""},
-    "link-hover": {"type": "string", "fallback": ""},
-    "link-click": {"type": "string", "fallback": ""},
+      "link-visited": {"type": "string", "fallback": ""},
+      "link-hover": {"type": "string", "fallback": ""},
+      "link-click": {"type": "string", "fallback": ""},
   
     "card": {"type": "string", "fallback": ""},
-    "card-hover": {"type": "string", "fallback": ""},
-    "card-click": {"type": "string", "fallback": ""}
+      "card-hover": {"type": "string", "fallback": ""},
+      "card-click": {"type": "string", "fallback": ""}
   }
 }
