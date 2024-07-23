@@ -1,40 +1,54 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "additionalProperties": false,
   "properties":
   {
     "$schema": {"type": "string"},
 
-    "name": {"type": ["string", "array"], "items": {"type": "string"}},
-    "desc": {"type": ["string", "array"], "items": {"type": "string"}},
+    "shard": {
+      "description": "The internal name of the palette, in `kebab-case`.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The preserved displayed name of the palette.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A short displayed description for the palette.",
+      "type": "string"
+    },
+    "duality": {
+      "description": "Whether the palette is classed as light or dark.",
+      "enum": ["light", "dark", null]
+    },
 
-    "prot": {"type": ["string", "array"], "items": {"type": "string"}},
-    "deut": {"type": ["string", "array"], "items": {"type": "string"}},
+    "prot": {"type": "string"},
+    "deut": {"type": "string"},
 
-    "focus": {"type": ["string", "array"], "items": {"type": "string"}},
+    "focus": {"type": "string"},
   
-    "text": {"type": ["string", "array"], "items": {"type": "string"}},
-    "text-prot": {"type": ["string", "array"], "items": {"type": "string"}},
-    "text-deut": {"type": ["string", "array"], "items": {"type": "string"}},
-    "text-trit": {"type": ["string", "array"], "items": {"type": "string"}},
-    "text-bold": {"type": ["string", "array"], "items": {"type": "string"}},
-    "text-select": {"type": ["string", "array"], "items": {"type": "string"}},
+    "text": {"type": "string"},
+    "text-prot": {"type": "string"},
+    "text-deut": {"type": "string"},
+    "text-trit": {"type": "string"},
+    "text-bold": {"type": "string"},
+    "text-select": {"type": "string"},
   
-    "back": {"type": ["string", "array"], "items": {"type": "string"}},
-    "back-prot": {"type": ["string", "array"], "items": {"type": "string"}},
-    "back-deut": {"type": ["string", "array"], "items": {"type": "string"}},
-    "back-trit": {"type": ["string", "array"], "items": {"type": "string"}},
+    "back": {"type": "string"},
+    "back-prot": {"type": "string"},
+    "back-deut": {"type": "string"},
+    "back-trit": {"type": "string"},
   
-    "line": {"type": ["string", "array"], "items": {"type": "string"}},
-    "line-prot": {"type": ["string", "array"], "items": {"type": "string"}},
-    "line-deut": {"type": ["string", "array"], "items": {"type": "string"}},
+    "line": {"type": "string"},
+    "line-prot": {"type": "string"},
+    "line-deut": {"type": "string"},
   
-    "link": {"type": ["string", "array"], "items": {"type": "string"}},
-    "link-hover": {"type": ["string", "array"], "items": {"type": "string"}},
-    "link-click": {"type": ["string", "array"], "items": {"type": "string"}},
+    "link": {"type": "string"},
+    "link-hover": {"type": "string"},
+    "link-click": {"type": "string"},
   
-    "card": {"type": ["string", "array"], "items": {"type": "string"}},
-    "card-hover": {"type": ["string", "array"], "items": {"type": "string"}},
-    "card-click": {"type": ["string", "array"], "items": {"type": "string"}}
+    "card": {"type": "string"},
+    "card-hover": {"type": "string"},
+    "card-click": {"type": "string"}
   }
 }
