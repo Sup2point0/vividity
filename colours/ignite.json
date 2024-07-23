@@ -1,10 +1,10 @@
 {
   "$schema": "../technicals/schema.json",
 
-  "name": "soup",
-  "shard": "soup",
-  "desc": "Light colours for the Assort site",
-  "duality": "light",
+  "name": "Ignite",
+  "shard": "ignite",
+  "desc": "",
+  "duality": "dark",
 
   "prot": "",
   "deut": "",
