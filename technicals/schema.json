@@ -1,6 +1,13 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "additionalProperties": false,
+  "required": [
+    "shard",
+    "prot",
+    "text", "text-deut",
+    "back", "back-deut",
+    "link", "link-hover"
+  ],
   "properties":
   {
     "$schema": {"type": "string"},
@@ -11,7 +18,8 @@
     },
     "name": {
       "description": "The preserved displayed name of the palette.",
-      "type": "string"
+      "type": "string",
+      "fallback": "shard"
     },
     "desc": {
       "description": "A short displayed description for the palette.",
@@ -19,7 +27,8 @@
     },
     "duality": {
       "description": "Whether the palette is classed as light or dark.",
-      "enum": ["light", "dark", null]
+      "enum": ["light", "dark", null],
+      "default": null
     },
 
     "prot": {"type": "string", "fallback": ""},
