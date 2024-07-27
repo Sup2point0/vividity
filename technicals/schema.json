@@ -43,6 +43,11 @@
       "text-bold": {"type": "string", "fallback": ""},
       "text-code": {"type": "string", "fallback": ""},
   
+    "head": {"type": "string", "fallback": ""},
+      "head-prot": {"type": "string", "fallback": ""},
+      "head-deut": {"type": "string", "fallback": ""},
+      "head-trit": {"type": "string", "fallback": ""},
+
     "back": {"type": "string", "fallback": ""},
       "back-prot": {"type": "string", "fallback": ""},
       "back-deut": {"type": "string", "fallback": ""},
@@ -53,7 +58,7 @@
       "line-deut": {"type": "string", "fallback": ""},
   
     "link": {"type": "string", "fallback": ""},
-      "link-visited": {"type": "string", "fallback": ""},
+      "link-visit": {"type": "string", "fallback": ""},
       "link-hover": {"type": "string", "fallback": ""},
       "link-click": {"type": "string", "fallback": ""},
   
