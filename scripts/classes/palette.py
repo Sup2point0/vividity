@@ -1,0 +1,95 @@
+from __future__ import annotations
+from typing import Iterable
+
+import json
+import re
+from copy import copy
+from dataclasses import dataclass
+from textwrap import dedent
+
+from jsonschema import validate
+
+from config import ROOT
+
+
+with open(ROOT / "technicals/schema.json", "r") as source:
+  SCHEMA = json.load(source)
+
+
+@ dataclass
+class Palette:
+  name: str
+  shard: str = None
+  desc: str = ""
+  ver: str = "1.0"
+
+  cols: dict[str, str] = None
+
+  def __post_init__(self):
+    if self.shard is None:
+      self.shard = self.name.lower().replace(" ", "-")
+    
+    if self.cols is None:
+      self.cols = {}
+      
+  @ staticmethod
+  def from_json(data: dict) -> Palette:
+    '''Load a colour palette from its JSON data.'''
+
+    data = copy(data)
+    data.pop("$schema", None)
+    validate(data, SCHEMA)
+
+    return Palette(
+      name = data.pop("name"),
+      shard = data.pop("shard", None),
+      desc = data.pop("desc", ""),
+      ver = data.pop("ver", "1.0"),
+      cols = data,
+    )
+
+  def to_dict(self, palette: Palette) -> dict:
+    '''Export dictionary representation of the colour palette.'''
+
+    return vars(self)
+
+  def to_css(self) -> str:
+    '''Export CSS representation of the colour palette.'''
+
+    styles = [
+      f"--col-{key}: {col};"
+      for key, col in self.cols.items()
+    ]
+
+    return dedent(f'''
+      /* {self.name}
+       * {self.version}
+       * {self.desc}
+       */
+
+      .{self.shard} {
+        {"\n ".join(styles)}
+      }
+    ''').strip()
+
+  def to_scss(self) -> str:
+    '''Export SCSS representation of the colour palette.'''
+
+    styles = [
+      f"$col-{key}: {col};"
+      for key, col in self.cols.items()
+    ]
+
+    return dedent(f'''
+      /// {self.name}
+      {"\n".join(styles)}
+    ''').strip()
+
+  @ staticmethod
+  def export_js(palettes: Iterable[Palette]) -> str:
+    '''Generate the JS representation of all colour palettes.'''
+
+    data = [each.to_dict() for each in palettes]
+    text = json.dumps(data, indent = 2)
+    out = re.sub(r"\"(.*?)\":", r"\1:", text)
+    return out
