@@ -6,9 +6,8 @@
   "desc": "",
   "duality": "dark",
 
-  "prot": "",
-  "deut": "",
-
+  "prot": "oklch(69.96% 0.20 44.44)",
+  "deut": "oklch(86.44% 0.177 93.53)",
   "focus": "",
 
   "text": "",
@@ -16,7 +15,6 @@
     "text-deut": "",
     "text-trit": "",
     "text-bold": "",
-    "text-select": "",
 
   "back": "",
     "back-prot": "",
