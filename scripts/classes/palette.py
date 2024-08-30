@@ -9,7 +9,7 @@ from textwrap import dedent
 
 from jsonschema import validate
 
-from config import ROOT
+from ..config import ROOT
 
 
 with open(ROOT / "technicals/schema.json", "r") as source:
@@ -23,6 +23,7 @@ class Palette:
   desc: str = ""
   ver: str = "1.0"
 
+  duality: str = None
   cols: dict[str, str] = None
 
   def __post_init__(self):
@@ -43,12 +44,13 @@ class Palette:
     return Palette(
       name = data.pop("name"),
       shard = data.pop("shard", None),
-      desc = data.pop("desc", ""),
       ver = data.pop("ver", "1.0"),
+      desc = data.pop("desc", ""),
+      duality = data.pop("duality", None),
       cols = data,
     )
 
-  def to_dict(self, palette: Palette) -> dict:
+  def to_dict(self) -> dict:
     '''Export dictionary representation of the colour palette.'''
 
     return vars(self)
@@ -61,16 +63,16 @@ class Palette:
       for key, col in self.cols.items()
     ]
 
-    return dedent(f'''
-      /* {self.name}
-       * {self.version}
-       * {self.desc}
-       */
+    return f'''
+/* {self.name}
+ * {self.ver}
+ * {self.desc}
+ */
 
-      .{self.shard} {
-        {"\n ".join(styles)}
-      }
-    ''').strip()
+.{self.shard} {{
+  {"\n  ".join(styles)}
+}}
+'''.strip()
 
   def to_scss(self) -> str:
     '''Export SCSS representation of the colour palette.'''
@@ -91,5 +93,5 @@ class Palette:
 
     data = [each.to_dict() for each in palettes]
     text = json.dumps(data, indent = 2)
-    out = re.sub(r"\"(.*?)\":", r"\1:", text)
+    out = re.sub(r"\"([^-\n]*?)\":", r"\1:", text)
     return out
