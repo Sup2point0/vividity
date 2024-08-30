@@ -5,7 +5,6 @@ import json
 import re
 from copy import copy
 from dataclasses import dataclass
-from textwrap import dedent
 
 from jsonschema import validate
 
@@ -82,10 +81,10 @@ class Palette:
       for key, col in self.cols.items()
     ]
 
-    return dedent(f'''
+    return f'''
       /// {self.name}
-      {"\n".join(styles)}
-    ''').strip()
+{"\n".join(styles)}
+    '''.strip()
 
   @ staticmethod
   def export_js(palettes: Iterable[Palette]) -> str:
