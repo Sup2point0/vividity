@@ -1,0 +1,22 @@
+[project]
+name = "Vividity"
+description = ""
+readme = "README.md"
+authors = [{name = "Sup#2.0"}]
+license = {file = "LICENSE"}
+requires-python = ">= 3.12"
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://github.com/Sup2point0/vividity"
+Repository = "https://github.com/Sup2point0/vividity"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+  "tests"
+]
+python_files = [
+  "test-*.py",
+]
