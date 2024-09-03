@@ -7,8 +7,6 @@ def setup_parser():
     description = "Provides automation for exporting Vividity colour palettes."
   )
 
-  parser.add_argument("route", default = "TEST")
-
   parser.add_argument("--css",
     action = "store",
     default = "palettes.css",

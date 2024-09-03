@@ -90,6 +90,12 @@ class Palette:
     '''Generate the CSS representation for the provided colour palettes.'''
 
     return "\n\n".join(each.to_css() for each in palettes)
+  
+  @ staticmethod
+  def export_scss(palettes: Iterable[Palette]) -> str:
+    '''Generate the SCSS representation for the provided colour palettes.'''
+
+    return "\n\n".join(each.to_scss() for each in palettes)
 
   @ staticmethod
   def export_js(palettes: Iterable[Palette]) -> str:

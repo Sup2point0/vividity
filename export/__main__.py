@@ -22,15 +22,19 @@ for path in sources:
 parser = setup_parser()
 argv = parser.parse_args()
 
+print(f">> Vividity / exporting...")
+
 ## CSS
 if argv.css:
   with open(CWD / argv.css, "w") as dest:
     dest.write(Palette.export_css(palettes))
 
-# JS
-# route = argv.js
-# if route:
-#   with open(REPO / route, "w") as dest:
-#     dest.write(
+## SCSS
+if argv.css:
+  with open(CWD / argv.scss, "w") as dest:
+    dest.write(Palette.export_scss(palettes))
 
-# for each in palettes:
+## JS
+if argv.js:
+  with open(CWD / argv.js, "w") as dest:
+    dest.write(Palette.export_js(palettes))
