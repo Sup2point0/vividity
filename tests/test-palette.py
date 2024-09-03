@@ -50,11 +50,21 @@ def test_to_scss(route):
     dest.write(p.to_scss())
 
 
-def test_to_js(route):
+def test_export_css(route):
   p = [
     Palette.from_json(DATA),
     Palette.from_json(DATA)
   ]
 
-  with open(route / "out" / "test.js", "w") as dest:
+  with open(route / "out" / "tests.css", "w") as dest:
+    dest.write(Palette.export_css(p))
+
+
+def test_export_js(route):
+  p = [
+    Palette.from_json(DATA),
+    Palette.from_json(DATA)
+  ]
+
+  with open(route / "out" / "tests.js", "w") as dest:
     dest.write(Palette.export_js(p))

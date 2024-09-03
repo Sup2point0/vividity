@@ -67,7 +67,6 @@ class Palette:
  * {self.ver}
  * {self.desc}
  */
-
 .{self.shard} {{
   {"\n  ".join(styles)}
 }}
@@ -85,10 +84,16 @@ class Palette:
       /// {self.name}
 {"\n".join(styles)}
     '''.strip()
+  
+  @ staticmethod
+  def export_css(palettes: Iterable[Palette]) -> str:
+    '''Generate the CSS representation for the provided colour palettes.'''
+
+    return "\n\n".join(each.to_css() for each in palettes)
 
   @ staticmethod
   def export_js(palettes: Iterable[Palette]) -> str:
-    '''Generate the JS representation of all colour palettes.'''
+    '''Generate the JS representation for the provided colour palettes.'''
 
     data = [each.to_dict() for each in palettes]
     text = json.dumps(data, indent = 2)
