@@ -42,3 +42,6 @@ if argv.js or "js" in argv.flags:
   route = CWD / argv.root / (argv.js or "palettes.js")
   with open(route, "w") as dest:
     dest.write(Palette.export_js(palettes))
+
+
+print(">> Vividity / done!")
