@@ -1,6 +1,6 @@
 # Palette Definitions
 
-Here you’ll find the JSON schema for colour palette definitions. For the palettes themselves, see [colours](../colours/).
+Here you’ll find the JSON schema for colour palette definitions. For the palettes themselves, see [palettes](../palettes/).
 
 Vividity colour palettes define a particular set of fields, which are used to build the interface. This means you can easily change between palettes while keeping the same semantic intent!
 
@@ -51,6 +51,14 @@ Text can be formatted in a lot of ways!
 | `text-bold` | Bold text | A colour to give bold text instead of increasing the weight (cuz colour is more subtle than weight!) |
 | `text-code` | Inline code | Colour of inline `code`. Won’t affect code blocks since those use syntax highlighting. |
 
+### Heading
+| key | field | notes |
+| :-- | :---- | :---- |
+| `head` |
+| `head-prot` |
+| `head-deut` |
+| `head-trit` |
+
 ### Background
 There’s so much that goes into the background. Structure, hierarchy, flow, it’s all here.
 
@@ -76,7 +84,7 @@ Who doesn’t love nicely coloured links?
 | key | field | notes |
 | :-- | :---- | :---- |
 | `link` | Links | |
-| `link-visited` | Visited link | The colour of links you’ve already visited. |
+| `link-visit` | Visited link | The colour of links you’ve already visited. |
 | `link-hover` | Hovered link | The colour when you hover over a link. |
 | `link-click` | Clicked link | The colour when you click the link! |
 

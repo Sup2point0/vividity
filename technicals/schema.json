@@ -1,6 +1,7 @@
 {
-  "version": "2.1",
+  "version": "2.2",
   "additionalProperties": false,
+  
   "required": [
     "shard",
     "prot",
@@ -12,14 +13,18 @@
   {
     "$schema": {"type": "string"},
 
-    "shard": {
-      "description": "The internal name of the palette, in `kebab-case`.",
-      "type": "string"
-    },
     "name": {
       "description": "The preserved displayed name of the palette.",
       "type": "string",
       "fallback": "shard"
+    },
+    "shard": {
+      "description": "The internal name of the palette, in `kebab-case`.",
+      "type": "string"
+    },
+    "ver": {
+      "description": "The internal version number of the palette.",
+      "type": "string"
     },
     "desc": {
       "description": "A short displayed description for the palette.",
@@ -33,7 +38,6 @@
 
     "prot": {"type": "string", "fallback": ""},
     "deut": {"type": "string", "fallback": ""},
-
     "focus": {"type": "string", "fallback": ""},
   
     "text": {"type": "string", "fallback": ""},
