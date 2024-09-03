@@ -27,15 +27,18 @@ print(f">> Vividity / exporting...")
 
 ## CSS
 if argv.css or "css" in argv.flags:
-  with open(CWD / argv.root / argv.css, "w") as dest:
+  route = CWD / argv.root / (argv.css or "palettes.css")
+  with open(route, "w") as dest:
     dest.write(Palette.export_css(palettes))
 
 ## SCSS
 if argv.scss or "scss" in argv.flags:
-  with open(CWD / argv.root / argv.scss, "w") as dest:
+  route = CWD / argv.root / (argv.scss or "palettes.scss")
+  with open(route, "w") as dest:
     dest.write(Palette.export_scss(palettes))
 
 ## JS
 if argv.js or "js" in argv.flags:
-  with open(CWD / argv.root / argv.js, "w") as dest:
+  route = CWD / argv.root / (argv.js or "palettes.js")
+  with open(route, "w") as dest:
     dest.write(Palette.export_js(palettes))
