@@ -7,17 +7,23 @@ def setup_parser():
     description = "Provides automation for exporting Vividity colour palettes."
   )
 
+  parser.add_argument("--root",
+    action = "store",
+    default = "",
+  )
   parser.add_argument("--css",
     action = "store",
-    default = "palettes.css",
   )
   parser.add_argument("--scss",
     action = "store",
-    default = "palettes.scss",
   )
   parser.add_argument("--js",
     action = "store",
-    default = "palettes.js",
+  )
+
+  parser.add_argument("flags",
+    action = "store",
+    nargs = "*"
   )
 
   return parser

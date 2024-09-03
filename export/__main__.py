@@ -21,20 +21,21 @@ for path in sources:
 ## parse
 parser = setup_parser()
 argv = parser.parse_args()
+print(argv)
 
 print(f">> Vividity / exporting...")
 
 ## CSS
-if argv.css:
-  with open(CWD / argv.css, "w") as dest:
+if argv.css or "css" in argv.flags:
+  with open(CWD / argv.root / argv.css, "w") as dest:
     dest.write(Palette.export_css(palettes))
 
 ## SCSS
-if argv.css:
-  with open(CWD / argv.scss, "w") as dest:
+if argv.scss or "scss" in argv.flags:
+  with open(CWD / argv.root / argv.scss, "w") as dest:
     dest.write(Palette.export_scss(palettes))
 
 ## JS
-if argv.js:
-  with open(CWD / argv.js, "w") as dest:
+if argv.js or "js" in argv.flags:
+  with open(CWD / argv.root / argv.js, "w") as dest:
     dest.write(Palette.export_js(palettes))
