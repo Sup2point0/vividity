@@ -8,7 +8,7 @@ from dataclasses import dataclass
 
 from jsonschema import validate
 
-from ..config import ROOT
+from config import ROOT
 
 
 with open(ROOT / "technicals/schema.json", "r") as source:
