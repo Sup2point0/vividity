@@ -6,29 +6,29 @@
   "desc": "Light colours for the Assort site",
   "duality": "light",
 
-  "prot": "",
-  "deut": "",
-
+  "prot": "#4090f1",
+  "deut": "#ff0090",
   "focus": "",
 
-  "text": "",
-    "text-prot": "",
-    "text-deut": "",
-    "text-trit": "",
+  "text": "oklch(1% 0 0)",
+    "text-prot": "#204080",
+    "text-deut": "oklch(60% 0.0434 269.73)",
+    "text-trit": "oklch(80% 0.0434 269.73)",
     "text-bold": "",
 
-  "back": "",
+  "back": "oklch(97.5% 0.006 269.73)",
     "back-prot": "",
-    "back-deut": "",
+    "back-deut": "oklch(94.5% 0.006 269.73)",
     "back-trit": "",
 
-  "line": "",
+  "line": "oklch(75% 0.006 269.73)",
     "line-prot": "",
     "line-deut": "",
 
-  "link": "",
-    "link-hover": "",
-    "link-click": "",
+  "link": "#2070c1",
+    "link-visit": "#ff0090",
+    "link-hover": "#9040f1",
+    "link-click": "#404090",
 
   "card": "",
     "card-hover": "",
