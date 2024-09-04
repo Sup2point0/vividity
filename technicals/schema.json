@@ -1,5 +1,5 @@
 {
-  "version": "2.2",
+  "version": "2.3",
   "additionalProperties": false,
   
   "required": [
@@ -36,38 +36,38 @@
       "default": null
     },
 
-    "prot": {"type": "string", "fallback": ""},
-    "deut": {"type": "string", "fallback": ""},
-    "focus": {"type": "string", "fallback": ""},
+    "prot": {"type": "string"},
+    "deut": {"type": "string", "fallback": "deut"},
+    "focus": {"type": "string", "fallback": "prot"},
   
-    "text": {"type": "string", "fallback": ""},
-      "text-prot": {"type": "string", "fallback": ""},
-      "text-deut": {"type": "string", "fallback": ""},
-      "text-trit": {"type": "string", "fallback": ""},
-      "text-bold": {"type": "string", "fallback": ""},
-      "text-code": {"type": "string", "fallback": ""},
+    "text": {"type": "string"},
+      "text-prot": {"type": "string", "fallback": "text"},
+      "text-deut": {"type": "string"},
+      "text-trit": {"type": "string", "fallback": "text-deut"},
+      "text-bold": {"type": "string", "fallback": "text"},
+      "text-code": {"type": "string", "fallback": "text-bold"},
   
-    "head": {"type": "string", "fallback": ""},
-      "head-prot": {"type": "string", "fallback": ""},
-      "head-deut": {"type": "string", "fallback": ""},
-      "head-trit": {"type": "string", "fallback": ""},
+    "head": {"type": "string", "fallback": "text"},
+      "head-prot": {"type": "string", "fallback": "head"},
+      "head-deut": {"type": "string", "fallback": "head"},
+      "head-trit": {"type": "string", "fallback": "head"},
 
-    "back": {"type": "string", "fallback": ""},
-      "back-prot": {"type": "string", "fallback": ""},
-      "back-deut": {"type": "string", "fallback": ""},
-      "back-trit": {"type": "string", "fallback": ""},
+    "back": {"type": "string"},
+      "back-prot": {"type": "string", "fallback": "back"},
+      "back-deut": {"type": "string"},
+      "back-trit": {"type": "string", "fallback": "back-deut"},
   
     "line": {"type": "string", "fallback": ""},
       "line-prot": {"type": "string", "fallback": ""},
       "line-deut": {"type": "string", "fallback": ""},
   
-    "link": {"type": "string", "fallback": ""},
-      "link-visit": {"type": "string", "fallback": ""},
-      "link-hover": {"type": "string", "fallback": ""},
-      "link-click": {"type": "string", "fallback": ""},
+    "link": {"type": "string"},
+      "link-visit": {"type": "string", "fallback": "link"},
+      "link-hover": {"type": "string"},
+      "link-click": {"type": "string", "fallback": "link-hover"},
   
-    "card": {"type": "string", "fallback": ""},
-      "card-hover": {"type": "string", "fallback": ""},
-      "card-click": {"type": "string", "fallback": ""}
+    "card": {"type": "string", "fallback": "back-deut"},
+      "card-hover": {"type": "string", "fallback": "back"},
+      "card-click": {"type": "string", "fallback": "back"}
   }
 }
