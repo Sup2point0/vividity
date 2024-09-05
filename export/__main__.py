@@ -21,7 +21,6 @@ for path in sources:
 ## parse
 parser = setup_parser()
 argv = parser.parse_args()
-print(argv)
 
 print(f">> Vividity / exporting...")
 
