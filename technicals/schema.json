@@ -1,5 +1,5 @@
 {
-  "version": "2.3",
+  "version": "2.4",
   "additionalProperties": false,
   
   "required": [
@@ -38,6 +38,9 @@
 
     "prot": {"type": "string"},
     "deut": {"type": "string", "fallback": "deut"},
+
+    "hover": {"type": "string"},
+    "click": {"type": "string", "fallback": "hover"},
     "focus": {"type": "string", "fallback": "prot"},
   
     "text": {"type": "string"},
