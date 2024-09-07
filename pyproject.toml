@@ -1,7 +1,7 @@
 [project]
 name = "Vividity"
 version = "1.0.0"
-description = ""
+description = "A collection of delicious colour palettes for UI and graphic design"
 readme = "README.md"
 authors = [{name = "Sup#2.0"}]
 license = {file = "LICENSE"}
