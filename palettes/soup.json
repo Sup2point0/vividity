@@ -20,19 +20,19 @@
 
   "back": "oklch(97.5% 0.006 269.73)",
     "back-prot": "",
-    "back-deut": "oklch(94.5% 0.006 269.73)",
-    "back-trit": "",
+    "back-deut": "oklch(94.5% 0.009 269.73)",
+    "back-trit": "oklch(96% 0.009 269.73)",
 
   "line": "oklch(75% 0.006 269.73)",
     "line-prot": "",
-    "line-deut": "",
+    "line-deut": "oklch(85% 0.006 269.73)",
 
   "link": "#2070c1",
     "link-visit": "#404090",
     "link-hover": "#ff0090",
     "link-click": "#9040f1",
 
-  "card": "white",
-    "card-hover": "grey",
-    "card-click": "darkgrey"
+  "card": "oklch(99% 0.003 269.73)",
+    "card-hover": "oklch(95% 0.005 269.73)",
+    "card-click": "oklch(85% 0.005 269.73)"
 }
