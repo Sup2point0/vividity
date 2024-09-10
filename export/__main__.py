@@ -36,6 +36,12 @@ if argv.scss or "scss" in argv.flags:
   with open(route, "w") as dest:
     dest.write(Palette.export_scss(palettes))
 
+## JSON
+if argv.json or "json" in argv.flags:
+  route = CWD / argv.root / (argv.json or "palettes.json")
+  with open(route, "w") as dest:
+    dest.write(Palette.export_json(palettes))
+
 ## JS
 if argv.js or "js" in argv.flags:
   route = CWD / argv.root / (argv.js or "palettes.js")

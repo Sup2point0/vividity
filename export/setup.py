@@ -17,6 +17,9 @@ def setup_parser():
   parser.add_argument("--scss",
     action = "store",
   )
+  parser.add_argument("--json",
+    action = "store",
+  )
   parser.add_argument("--js",
     action = "store",
   )

@@ -96,12 +96,19 @@ class Palette:
     '''Generate the SCSS representation for the provided colour palettes.'''
 
     return "\n\n".join(each.to_scss() for each in palettes)
+  
+  @ staticmethod
+  def export_json(palettes: Iterable[Palette]) -> str:
+    '''Generate the JSON representation for the provided colour palettes.'''
+
+    data = [each.to_dict() for each in palettes]
+    out = json.dumps(data, indent = 2)
+    return out
 
   @ staticmethod
   def export_js(palettes: Iterable[Palette]) -> str:
     '''Generate the JS representation for the provided colour palettes.'''
 
-    data = [each.to_dict() for each in palettes]
-    text = json.dumps(data, indent = 2)
-    out = re.sub(r"\"([^-\n]*?)\":", r"\1:", text)
+    data = Palette.export_json(palettes)
+    out = re.sub(r"\"([^-\n]*?)\":", r"\1:", data)
     return out
