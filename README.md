@@ -12,8 +12,8 @@ Wait, vividity isn’t a real word? Well why shouldn’t it be 0v0
 
 ## Usage
 
-### Raw Files
-
 ### Git Submodule
+See [Vividity as a Git Submodule](docs/usage/submodule.md).
 
 ### API
+Under development!
