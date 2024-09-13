@@ -1,5 +1,5 @@
 {
-  "version": "2.4",
+  "version": "2.5",
   "additionalProperties": false,
   
   "required": [
@@ -38,10 +38,12 @@
 
     "prot": {"type": "string"},
     "deut": {"type": "string", "fallback": "deut"},
+    "flavour": {"type": "string", "fallback": "deut"},
 
     "hover": {"type": "string"},
     "click": {"type": "string", "fallback": "hover"},
     "focus": {"type": "string", "fallback": "prot"},
+    "select": {"type": "string", "fallback": "focus"},
   
     "text": {"type": "string"},
       "text-prot": {"type": "string", "fallback": "text"},
