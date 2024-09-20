@@ -22,7 +22,7 @@
       "description": "The internal name of the palette, in `kebab-case`.",
       "type": "string"
     },
-    "ver": {
+    "version": {
       "description": "The internal version number of the palette.",
       "type": "string"
     },

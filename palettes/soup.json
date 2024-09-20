@@ -3,6 +3,7 @@
 
   "name": "soup",
   "shard": "soup",
+  "version": "1.6.1",
   "desc": "Light colours for the Assort site",
   "duality": "light",
 
@@ -13,7 +14,7 @@
   "hover": "rgba(0 0 0 / 8%)",
   "click": "rgba(0 0 0 / 16%)",
   "focus": "oklch(75.8% 0.1336 243.03)",
-  "select": "#ff0090",
+  "select": "rgba(205 180 247 / 80%)",
 
   "text": "oklch(1% 0 0)",
     "text-prot": "#204080",
