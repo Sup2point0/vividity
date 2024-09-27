@@ -3,12 +3,12 @@
 
   "name": "soup",
   "shard": "soup",
-  "version": "1.6.1",
+  "version": "2.0.0",
   "desc": "Light colours for the Assort site",
   "duality": "light",
 
   "prot": "oklch(65.12% 0.18 262.62)",
-  "deut": "#ff0090",
+  "deut": "#ff055f",
   "flavour": "oklch(81.45% 0.096 301.79)",
 
   "hover": "rgba(0 0 0 / 8%)",
