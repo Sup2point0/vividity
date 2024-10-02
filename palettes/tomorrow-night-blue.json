@@ -4,8 +4,9 @@
   "name": "Tomorrow Night Blue",
   "shard": "tomorrow-night-blue",
   "version": "1.0.0",
-  "desc": "The Tomorrow Night Blue VSCode theme, originally by Chris Kempson",
+  "desc": "The Tomorrow Night Blue VSCode theme.",
   "duality": "dark",
+  "credits": "Chris Kempson",
 
   "prot": "#d1f1a9",
   "deut": "#ff9da4",
@@ -15,11 +16,13 @@
     "text-deut": "#7285b7",
 
   "back": "#002451",
+    "back-deut": "red",
 
   "line": "#7285b7",
 
   "link": "#99ffff",
     "link-visit": "#ebbbff",
+    "link-hover": "red",
 
   "card": "#7285b7"
 }

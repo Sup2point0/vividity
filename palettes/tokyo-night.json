@@ -16,17 +16,18 @@
 
   "text": "white",
     "text-prot": "#ffc777",
-    "text-deut": "737aa2",
+    "text-deut": "#737aa2",
 
   "back": "#1f2335",
-    "back-prot": "#3b4261"
+    "back-prot": "#3b4261",
     "back-deut": "#292e42",
     "back-trit": "#24283b",
 
-  "line": "#394b70"
+  "line": "#394b70",
 
   "link": "#41a6b5",
     "link-visit": "#9d7cd8",
+    "link-hover": "red",
 
   "card": "#545c7e",
     "card-hover": "#737aa2",
