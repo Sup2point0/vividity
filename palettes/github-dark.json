@@ -1,0 +1,20 @@
+{
+  "$schema": "../technicals/schema.json",
+
+  "name": "GitHub Dark",
+  "shard": "github-dark",
+  "version": "1.0.0",
+  "desc": "The GitHub dark theme",
+  "duality": "dark",
+
+  "prot": "oklch(63.54% 0.198 255.83)",
+  "deut": "oklch(63.8% 0.196 19.13)",
+
+  "back": "oklch(27.81% 0.012 248.25)",
+    "back-prot": "",
+    "back-deut": "oklch(41.56% 0.019 248.28)",
+    "back-trit": "oklch(32.91% 0.016 248.3)",
+
+  "card": "oklch(48.53% 0.018 251.31)",
+    "card-hover": "oklch(55.14% 0.019 250.98)"
+}
