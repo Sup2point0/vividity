@@ -8,7 +8,27 @@
   "duality": "dark",
   "credits": "folke/tokyonight.nvim",
 
-  "col-prot": "#7aa2f7",
+  "prot": "#7aa2f7",
+  "deut": "#ff757f",
+  "flavour": "#ff9e64",
 
-  "col-back": "#1f2335"
+  "focus": "#b4f9f8",
+
+  "text": "white",
+    "text-prot": "#ffc777",
+    "text-deut": "737aa2",
+
+  "back": "#1f2335",
+    "back-prot": "#3b4261"
+    "back-deut": "#292e42",
+    "back-trit": "#24283b",
+
+  "line": "#394b70"
+
+  "link": "#41a6b5",
+    "link-visit": "#9d7cd8",
+
+  "card": "#545c7e",
+    "card-hover": "#737aa2",
+    "card-click": "#565f89"
 }
