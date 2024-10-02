@@ -9,12 +9,20 @@
 
   "prot": "oklch(63.54% 0.198 255.83)",
   "deut": "oklch(63.8% 0.196 19.13)",
+  "flavour": "oklch(64.01% 0.175 146.74)",
+
+  "text": "white",
+    "text-prot": "oklch(90.68% 0.15 95.36)",
+    "text-deut": "oklch(69.21% 0.015 248.04)",
 
   "back": "oklch(27.81% 0.012 248.25)",
-    "back-prot": "",
+    "back-prot": "oklch(38.9% 0.132 256.56)",
     "back-deut": "oklch(41.56% 0.019 248.28)",
     "back-trit": "oklch(32.91% 0.016 248.3)",
 
   "card": "oklch(48.53% 0.018 251.31)",
-    "card-hover": "oklch(55.14% 0.019 250.98)"
+    "card-hover": "oklch(55.14% 0.019 250.98)",
+
+  "link": "oklch(63.54% 0.198 255.83)",
+    "link-visit": "oklch(59.11% 0.165 297.31)"
 }
