@@ -1,0 +1,25 @@
+{
+  "$schema": "../technicals/schema.json",
+
+  "name": "Tomorrow Night Blue",
+  "shard": "tomorrow-night-blue",
+  "version": "1.0.0",
+  "desc": "The Tomorrow Night Blue VSCode theme, originally by Chris Kempson",
+  "duality": "dark",
+
+  "col-prot": "#d1f1a9",
+  "col-deut": "#ff9da4",
+
+  "col-text": "white",
+    "col-text-prot": "#ff9da4",
+    "col-text-deut": "#7285b7",
+
+  "col-back": "#002451",
+
+  "col-line": "#7285b7",
+
+  "col-link": "#99ffff",
+    "col-link-visit": "#ebbbff",
+
+  "col-card": "#7285b7",
+}
