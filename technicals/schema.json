@@ -1,5 +1,5 @@
 {
-  "version": "2.5",
+  "version": "2.6",
   "additionalProperties": false,
   
   "required": [
@@ -34,6 +34,10 @@
       "description": "Whether the palette is classed as light or dark.",
       "enum": ["light", "dark", null],
       "default": null
+    },
+    "credits": {
+      "description": "Credits for the source of the colour palette.",
+      "type": "string"
     },
 
     "prot": {"type": "string"},
