@@ -20,7 +20,7 @@ class Palette:
   name: str
   shard: str = None
   desc: str = ""
-  ver: str = "1.0"
+  version: str = "1.0"
 
   duality: str = None
   cols: dict[str, str] = None
@@ -43,7 +43,7 @@ class Palette:
     return Palette(
       name = data.pop("name"),
       shard = data.pop("shard", None),
-      ver = data.pop("ver", "1.0"),
+      version = data.pop("version", "1.0"),
       desc = data.pop("desc", ""),
       duality = data.pop("duality", None),
       cols = data,
@@ -64,7 +64,7 @@ class Palette:
 
     return f'''
 /* {self.name}
- * {self.ver}
+ * {self.version}
  * {self.desc}
  */
 .{self.shard} {{
