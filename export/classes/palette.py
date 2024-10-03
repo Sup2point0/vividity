@@ -21,6 +21,7 @@ class Palette:
   shard: str = None
   desc: str = ""
   version: str = "1.0"
+  credits: str = None
 
   duality: str = None
   cols: dict[str, str] = None
@@ -46,6 +47,7 @@ class Palette:
       version = data.pop("version", "1.0"),
       desc = data.pop("desc", ""),
       duality = data.pop("duality", None),
+      credits = data.pop("credits", None),
       cols = data,
     )
 
