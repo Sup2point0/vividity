@@ -13,12 +13,13 @@
   "flavour": "#ff9e64",
 
   "hover": "rgba(255 255 255 / 8%)",
-  "focus": "#b4f9f8",
+  "focus": "#4fd6be",
   "select": "#ff007c",
 
   "text": "white",
     "text-prot": "#ffc777",
     "text-deut": "#737aa2",
+    "text-trit": "##565f89",
 
   "back": "#1f2335",
     "back-prot": "#3b4261",
