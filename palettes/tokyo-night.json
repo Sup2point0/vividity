@@ -12,7 +12,9 @@
   "deut": "#ff757f",
   "flavour": "#ff9e64",
 
+  "hover": "rgba(255 255 255 / 8%)",
   "focus": "#b4f9f8",
+  "select": "#ff007c",
 
   "text": "white",
     "text-prot": "#ffc777",
@@ -21,15 +23,16 @@
   "back": "#1f2335",
     "back-prot": "#3b4261",
     "back-deut": "#292e42",
-    "back-trit": "#24283b",
+    "back-trit": "#161927",
 
   "line": "#394b70",
+    "line-deut": "#161927",
 
   "link": "#41a6b5",
     "link-visit": "#9d7cd8",
-    "link-hover": "red",
+    "link-hover": "#ff007c",
 
-  "card": "#545c7e",
-    "card-hover": "#737aa2",
+  "card": "#24283b",
+    "card-hover": "#292e42",
     "card-click": "#565f89"
 }

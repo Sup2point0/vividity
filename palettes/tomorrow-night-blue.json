@@ -10,19 +10,28 @@
 
   "prot": "#d1f1a9",
   "deut": "#ff9da4",
+  "flavour": "#ffc58f",
+
+  "hover": "rgba(255 255 255 / 5%)",
+  "select": "#003f8e",
 
   "text": "white",
     "text-prot": "#ff9da4",
     "text-deut": "#7285b7",
+    "text-trit": "#7285b7",
 
-  "back": "#002451",
-    "back-deut": "red",
+  "back": "#001c40",
+    "back-prot": "#002451",
+    "back-deut": "#001733",
 
   "line": "#7285b7",
+    "line-deut": "#7285b7",
 
   "link": "#99ffff",
     "link-visit": "#ebbbff",
-    "link-hover": "red",
+    "link-hover": "#d1f1a9",
 
-  "card": "#7285b7"
+  "card": "#002451",
+    "card-hover": "#00346e",
+    "card-click": "#00346e"
 }
