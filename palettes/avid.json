@@ -1,0 +1,37 @@
+{
+  "$schema": "../technicals/schema.json",
+
+  "name": "Avid",
+  "shard": "avid",
+  "version": "0.1.0",
+  "desc": "The Avidity theme.",
+  "duality": null,
+  "credits": "Sup#2.0",
+
+  "prot": "#d1f1a9",
+  "deut": "#ff9da4",
+  "flavour": "#ffc58f",
+
+  "hover": "rgba(255 255 255 / 5%)",
+  "select": "#003f8e",
+
+  "text": "white",
+    "text-prot": "#ff9da4",
+    "text-deut": "#7285b7",
+    "text-trit": "#7285b7",
+
+  "back": "oklch(58.75% 0.3 13.89)",
+    "back-prot": "oklch(58.75% 0.3 13.89)",
+    "back-deut": "oklch(58.75% 0.3 13.89)",
+
+  "line": "oklch(58.75% 0.3 13.89)",
+    "line-deut": "#7285b7",
+
+  "link": "#99ffff",
+    "link-visit": "#ebbbff",
+    "link-hover": "#d1f1a9",
+
+  "card": "oklch(58.75% 0.3 13.89)",
+    "card-hover": "oklch(58.75% 0.3 13.89)",
+    "card-click": "oklch(58.75% 0.3 13.89)"
+}
