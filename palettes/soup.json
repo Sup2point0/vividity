@@ -22,7 +22,7 @@
     "text-trit": "oklch(80% 0.04 269.69)",
 
   "back": "oklch(98.5% 0.002 269.69)",
-    "back-prot": "red",
+    "back-prot": "oklch(95.29% 0.02 269.69)",
     "back-deut": "oklch(97% 0.004 269.69)",
     "back-trit": "oklch(98% 0.003 269.69)",
 
