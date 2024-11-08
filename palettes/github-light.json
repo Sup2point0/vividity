@@ -1,0 +1,29 @@
+{
+  "$schema": "../technicals/schema.json",
+
+  "name": "GitHub Light",
+  "shard": "github-light",
+  "version": "1.0.0",
+  "desc": "The GitHub light theme",
+  "duality": "light",
+
+  "prot": "oklch(64.01 0.175 146.74)",
+  "deut": "oklch(52.99 0.19 257.41)",
+  "flavour": "oklch(58.79 0.193 20.47)",
+
+  "text": "black",
+    "text-prot": "red",
+    "text-deut": "oklch(48.53 0.018 251.31)",
+
+  "back": "white",
+    "back-prot": "red",
+    "back-deut": "red",
+    "back-trit": "red",
+
+  "card": "oklch(97.82 0.003 247.86)",
+    "card-hover": "oklch(96.16 0.002 67.8)",
+
+  "link": "oklch(49.49 0.18 257.6)",
+    "link-visit": "oklch(43.32 0.172 294.32)",
+    "link-hover": "oklch(38.9 0.132 256.56)"
+}
